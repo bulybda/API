@@ -1,0 +1,128 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body {
+  background-color: black;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+form {
+  height: 100px;
+
+  background-color:black;
+  display:flex;
+  justify-content: center;
+}
+h1{
+  /*background-color:dimgray;*/
+  padding-top:15px;
+  color:white;
+  display:flex;
+  justify-content:center;
+}
+.myInput {
+  display:flex;
+  width:300px;
+  height:10px;
+}
+#root {
+  display:flex;
+  justify-content: center;
+  /*padding-top:200px;*/
+}
+
+.App{
+  width: 800px;
+
+}
+.gifLogo{
+  width:300px;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+}
+.myInput {
+  display:flex;
+  width:500px;
+  height:50px;
+}
+
+.btnCreate{
+  padding-top:10px;
+  border-radius: 0px;
+  display:flex;
+  background-color:gray;
+  text-align:center;
+  color:white;
+  width:75px;
+  height:50px;
+}
+
+.task {
+  padding:10px;
+  height:35px;
+  display:flex;
+  justify-content: space-between;
+  background-color:darkgray;
+}
+.task-done {
+  padding:10px;
+  height:35px;
+  display:flex;
+  justify-content: space-between;
+  background-color: gray;
+  /*text-decoration: line-through;*/
+}
+.sort{
+  width:400px;
+}
+.sort button {
+  margin:10px;
+}
+
+.lds-ring {
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin:auto;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
